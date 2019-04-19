@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="MonthExam"
+  id="myeclipse.1526515973387"
+  context-root="/MonthExam"
+  j2ee-spec="6.0"
+  archive="MonthExam.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

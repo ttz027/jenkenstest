@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.zt.dao.MonthExamMapper">
+	<insert id="regUser" parameterType="Exam_User">
+		INSERT INTO exam_user(username,`password`) VALUES(#{userName},#{password})
+	</insert>
+	
+	<select id="login" parameterType="Exam_User" resultType="Exam_User">
+		SELECT * FROM exam_user WHERE 
+		username = #{userName} AND `password`=#{password}
+	</select>
+	
+	<select id="getUserByName" resultType="Exam_User">
+		SELECT * FROM exam_user WHERE 
+		username = #{name} 
+	</select>
+	
+	<select id="userList" resultType="Exam_User">
+		SELECT * FROM exam_user 
+	</select>
+</mapper>
